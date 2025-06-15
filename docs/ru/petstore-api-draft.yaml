@@ -2,10 +2,16 @@ openapi: 3.0.0
 info:
   version: 1.0.0
   title: Swagger Petstore Draft
+  description: |
+    Это API магазина питомцев, позволяющее управлять данными о животных,
+    их категориях и заказах.
   license:
     name: MIT
 servers:
   - url: http://petstore.swagger.io/v1
+    description: Основной production-сервер
+  - url: https://dev.petstore.swagger.io/v1
+    description: Тестовый сервер для разработки и отладки
 paths:
   /pets:
     get:
