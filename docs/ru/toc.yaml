@@ -3,11 +3,6 @@ href: index.yaml
 items: 
   - name: О проекте
     href: about.md
-  - name: Дополнительная страница
-    href: page.md
-  - name: Другая страница
-    href: anotherpage.md
-  - name: Подраздел
-    include:
-      path: sub-section/toc.yaml
-      mode: link
+  - name: Swagger Petstore API
+    href: swagger_pet_store_api.md
+ 
