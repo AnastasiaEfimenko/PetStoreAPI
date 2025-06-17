@@ -12,6 +12,17 @@ servers:
     description: Основной production-сервер
   - url: https://dev.petstore.swagger.io/v1
     description: Тестовый сервер для разработки и отладки
+security:
+  - apiKey: []
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      name: X-API-Key
+      in: header
+      description: |
+        API ключ для аутентификации. Получите ключ у администратора системы.
+        Добавляйте его в заголовок X-API-Key каждого запроса.
 paths:
   /pets:
     get:
