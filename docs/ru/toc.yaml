@@ -1,8 +1,14 @@
-title: Шаблон проекта документации
+title: Pet store API
 href: index.yaml
 items: 
   - name: О проекте
     href: about.md
   - name: Swagger Petstore API
     href: swagger_petstore_api.md
-
+    type: "api"
+    source: "docs/ru/petstore-api-draft.yaml"
+    parser: "openapi"
+    options:
+    render:
+      include_examples: true
+      group_by: "tags"  # группировка по тегам
